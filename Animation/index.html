@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minun animaatio</title>
+     <!--COUNTER-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <!--END-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
+</head>
+<body>
+    <!--Nav alkaa-->
+    <nav>
+       <div class="logo">
+          <h1>Koodaus</h1>
+       </div>
+      
+        <div class="topnav" id="myTopnav">
+           <a href="#"class="icon" onclick="DisplayMenu()">
+           <div class="dot"></div>
+           <div class="dot"></div>
+           <div class="dot"></div>
+        </a>
+           <a href="#koodaus">Koodaus</a>
+           <a href="#ohjelmointikielet">Ohjelmointikielet</a>
+           <a href="#käytänteet">Käytänteet</a>
+           <a href="#blogi">Blogi</a>
+
+
+
+        </div>
+
+        
+
+
+
+    </nav>
+    <script>
+      function DisplayMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "topnav"
+        }
+      }
+
+    </script>
+
+    <!--Nav loppuu-->
+    <!--top alkaa-->
+
+        <div class="top">
+        <div class="loading-box">
+         <div class="loading-box">Loading</div>
+         <div class="counter">100</div>%
+
+        </div>
+
+         <div class="top-photos">
+            <img src="bzdv6hn2.jpg" alt"kuva">
+            <img src="35kwedls.jpg" alt"kuva">
+            <img src="bzdv6hn2.jpg" alt""kuva">
+         <center>
+         </div>
+          <div class="title">
+            <h1>WEB DEVAAJA</h1>
+            <div class="subtitle">
+                SCROLL DOWN <br>
+                &#X2193;
+            </div>
+          </div>
+        </center>
+
+        <div class="about">
+          <p<div data-aos="fade-down-left"></div>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, rerum!</p>
+        </div>
+
+
+
+
+
+        <div class="programming">
+          <p>
+            TERVETULOA MINUN <br> <span>OHJELMOINTI</span><br>SIVUILLE
+          </p>
+        </div>
+
+        <center>
+          <p style="font-size: 80px; font-family: 'Monoton', cursive; padding: 30px;">OTA YHTEYTTÄ</p>
+          <p style="font-size: 25px;">ohjelmointi@ohjelmointi.fi</p>
+        </center>
+
+        <center>
+          <div class="socialmedia">
+            <p style="font-size: 80px; font-family: 'Monoton', cursive; padding: 30px;">socialmedia</p>
+
+            <div class="section">
+              <div class="container">
+                <img src="pexels-pixabay-267350.jpg" alt="">
+              </div>
+              <br>
+              FACEBOOK
+              <div class="socialmedia">
+                <p style="font-size: 80px; font-family: 'Monoton', cursive; padding: 30px;">socialmedia</p>
+    
+                <div class="section">
+                  <div class="container">
+                    <img src="pexels-pixabay-267350.jpg" alt="">
+                  </div>
+                  <br>
+              INSTAGRAM
+              <div class="socialmedia">
+                <p style="font-size: 80px; font-family: 'Monoton', cursive; padding: 30px;">socialmedia</p>
+    
+                <div class="section">
+                  <div class="container">
+                    <img src="pexels-pixabay-267350.jpg" alt="">
+                  </div>
+                  <br>
+              TWITTER
+            </div>
+          </div>
+        </center>
+        <center>
+        <div class="gallery" id="portfolio">
+        <div style="height: 750px;">
+             <p style="font-size: 80px; font-family: 'Monoton', cursive; padding: 30px;"></p>
+             <div class="image">
+              <img src="pexels-pixabay-267350.jpg">
+             </div>
+        </div>
+
+        </div>
+        </center>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+       
+        <script>
+          AOS.init({
+            duration: 1000,
+          });
+        </script>
+
+
+        <script>
+          function DisplayMenu() {
+            var x = document.getElementById("portfolio");
+            if (x.className === "gallery") {
+                x.classname += " active";
+            }
+            else {
+              x.className = "gallery"
+            }
+          }
+        </script>
+
+
+        
+<script>
+  function DisplayMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.classname += " responsive";
+    }
+    else {
+      x.className = "topnav"
+    }
+  }
+</script>
+        <script>
+            $(document).ready(function () {
+             $('.counter').counterUp({
+              delay: 13,
+              time: 1600
+             });
+            });
+        </script>
+          <!--top loppuu-->
+</body>
+</html>
