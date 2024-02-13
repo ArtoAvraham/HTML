@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <style>
+    header {
+        background: url(./kuvat/tree-736877_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+    }
+   
+    section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+        background-color: blueviolet;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+        background: transparent;
+    }
+
+
+    @media screen and (max-width: 670px){
+        header {
+            min-height: 500px;
+        }
+    }
+
+  </style>
+ 
+  <title>Taitotalo</title>
+</head>
+<body>
+ <header>
+       <nav class="nav-wrapper transparent">
+          <div class="container">
+            <a href="" class="brand-logo">TAITOTALO</a>
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+       </nav> 
+
+ </header>
+
+ <section class="container section scrollspy" id="photos">
+ 
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="./kuvat/france-1790999_1280.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6">
+        <h2 class="indigo-text text-darken-4">Moikkavaan</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam, pariatur dolorum cum amet ipsam,
+           ipsa ducimus vitae saepe magni, aliquam neque fuga! Possimus, libero.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="./kuvat/avenue-2215317_1280.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="indigo-text text-darken-4">Heip hei</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam, pariatur dolorum cum amet ipsam,
+           ipsa ducimus vitae saepe magni, aliquam neque fuga! Possimus, libero.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="./kuvat/tree-736882_1280.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6">
+        <h2 class="indigo-text text-darken-4">Todella hieno</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quam, pariatur dolorum cum amet ipsam,
+           ipsa ducimus vitae saepe magni, aliquam neque fuga! Possimus, libero.</p>
+      </div>
+    </div>
+ 
+     </section>
+
+     <div class="parallax-container">
+        <div class="parallax">
+            <img src="./kuvat/tree-736882_1280.jpg" alt="" class="resposive-img">
+        </div>
+     </div>
+
+     <div class="container section" id="services">
+        <div class="row">
+            <div class="col s12 14">
+                <h2 class="indigo-text text-darken-4">Mitä mä teen...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Velit incidunt sunt id soluta in officia iste fugit, magni asperiores enim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ad dolor sapiente enim officiis atque nesciunt laudantium ab facilis repellendus voluptatem?</p>
+            </div>
+            <div class="col.s12 l6 offset-12">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="" class="indigo-text text-darken-4">Photography</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="" class="indigo-text text-darken-4">Edit</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="Photography">
+                    <p class="flow-text indigo-text text-darken-4">Photography</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sapiente nobis necessitatibus ipsam ipsa distinctio aut quasi debitis at quis eius harum placeat,
+                         consequuntur dignissimos odio.</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odio.</p>
+                </div>
+
+            </div>  <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">Editing</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sapiente nobis necessitatibus ipsam ipsa distinctio aut quasi debitis at quis eius harum placeat,
+                         consequuntur dignissimos odio.</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odio.</p>
+                </div>
+        </div>
+        
+     </div>
+
+     <div class="parallax-container">
+        <div class="parallax">
+            <img src="./kuvat/tree-736877_1280.jpg" alt="" class="resposive-img">
+        </div>
+     </div>
+
+
+           <section class="section-container">
+
+            <div class="row">
+                <div class="col s12 l5">
+                    <h2 class="indigo-text text-darken-4">OTA YHTEYTTÄ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sapiente nobis necessitatibus ipsam ipsa distinctio aut quasi debitis at quis eius harum placeat,
+                         consequuntur dignissimos odio.</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, odio.</p>
+
+                </div>
+                <div class="col s12 l5 offset-12">
+                    <form action="">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email">
+                            <label for="email">SINUN EMAIL</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="message" class="materialize-textarea">Teksti alue</textarea>
+                            <label for="message">Sinun viesti</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">valitse aika</label>
+
+                            <div class="input-field">
+                                <p>Valitse palvelu...</p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Photography</span>
+                                    </label>
+                                </p>
+                            </div>
+
+                            <div class="input-field">
+                                <p>Valitse palvelu...</p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Editing</span>
+                                    </label>
+                                </p>
+                            </div>
+
+                            <div class="input field">
+                                <button class="btn">Lähetä</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+
+
+            </div>
+           </section>
+
+
+
+                   <footer class="page-footer grey darken-3">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <h5>Tietoa minusta</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, tempore.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, similique.</p>
+                            </div>
+                            <div class="col s12 14 offset-12">
+                                <h5>yhteystiedot</h5>
+                                <ul>
+                                    <li>
+                                        <a href="" class="grey-text text-lighten-3">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="grey-text text-lighten-3">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="grey-text text-lighten-3">Youtube</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="grey-text text-lighten-3">X</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright grey darken-4">
+                        <div class="container center-align">&copy; 2024 ARTO RINNE</div>
+                    </div>
+
+
+
+
+                   </footer>
+ 
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.datepicker').datepicker({
+      disableWeekends: true
+     });
+    
+ 
+    });
+  </script>
+</body>
+</html>
